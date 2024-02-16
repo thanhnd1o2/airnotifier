@@ -9,7 +9,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends git ca-certificates
 
 RUN pip3 install pipenv
-RUN pip3 install -upgrade setuptools wheel
+RUN pip3 install -U setuptools wheel
 
 RUN git clone https://github.com/thanhnd1o2/airnotifier.git /airnotifier
 RUN mkdir -p /var/airnotifier/pemdir && \
